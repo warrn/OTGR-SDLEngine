@@ -1,12 +1,12 @@
-#ifndef SDLAPP_H
-#define SDLAPP_H
+#ifndef OTGRAPP_H
+#define OTGRAPP_H
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <string>
 #include <map>
 #include <iostream>
 
-class SDLApp{
+class OTGRApp{
 protected:
     unsigned int window_w, window_h;
     std::string name;
@@ -28,9 +28,9 @@ protected:
 
 public:
     // Constructor
-    SDLApp(unsigned int, unsigned int, const std::string&);
+    OTGRApp(unsigned int, unsigned int, const std::string&);
     // Destructor
-    ~SDLApp();
+    ~OTGRApp();
     bool isQuit() const { return quit; }
 
 
@@ -57,4 +57,4 @@ public:
 
 
 
-#endif // SDLAPP_H
+#endif // OTGRApp_H

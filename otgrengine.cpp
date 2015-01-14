@@ -1,15 +1,15 @@
-#include "sdlengine.h"
+#include "otgrengine.h"
 
-SDLEngine::SDLEngine(unsigned int w, unsigned int h, const std::string& n):
-    SDLApp(w, h, n){
-
-}
-
-SDLEngine::~SDLEngine(){
+OTGREngine::OTGREngine(unsigned int w, unsigned int h, const std::string& n):
+    OTGRApp(w, h, n){
 
 }
 
-void SDLEngine::onEvent(){
+OTGREngine::~OTGREngine(){
+
+}
+
+void OTGREngine::onEvent(){
     // Make event container
     SDL_Event e;
 
@@ -24,16 +24,16 @@ void SDLEngine::onEvent(){
     }
 }
 
-void SDLEngine::onRender(){
+void OTGREngine::onRender(){
     SDL_RenderClear(renderer);
-    for(std::list<SDLSprite>::iterator iter = sprites.begin(); iter != sprites.end(); ++iter){
+    for(std::list<OTGRSprite>::iterator iter = sprites.begin(); iter != sprites.end(); ++iter){
         SDL_Rect dstrect = iter->getCoordinates();
         SDL_RenderCopy(renderer, iter->getTexture(), NULL, &dstrect);
     }
     SDL_RenderPresent(renderer);
 }
 
-void SDLEngine::insertSprite(SDLSprite sprite){
+void OTGREngine::insertSprite(OTGRSprite sprite){
     sprites.push_back(sprite);
 
 }

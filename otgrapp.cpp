@@ -1,6 +1,6 @@
-#include "sdlapp.h"
+#include "otgrapp.h"
 
-SDLApp::SDLApp(unsigned int w, unsigned int h,const std::string &n = "Default Name"){
+OTGRApp::OTGRApp(unsigned int w, unsigned int h,const std::string &n = "Default Name"){
     window = NULL;
     renderer = NULL;
     window_w = w;
@@ -12,11 +12,11 @@ SDLApp::SDLApp(unsigned int w, unsigned int h,const std::string &n = "Default Na
 
 }
 
-SDLApp::~SDLApp(){
+OTGRApp::~OTGRApp(){
     if(!this->onDestroy()) std::cerr << "Program failed to close!\n";
 }
 
-bool SDLApp::onInit(){
+bool OTGRApp::onInit(){
     if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
         std::cerr << "SDL could not initialize! SDL_Error: " << SDL_GetError() << "\n";
@@ -48,7 +48,7 @@ bool SDLApp::onInit(){
     }
 }
 
-bool SDLApp::onDestroy(){
+bool OTGRApp::onDestroy(){
     // Destroy all SDL Surfaces
     for(std::map<std::string, SDL_Texture*>::iterator iter = textures.begin();
         iter != textures.end(); iter++){
@@ -69,7 +69,7 @@ bool SDLApp::onDestroy(){
 }
 
 
-bool SDLApp::loadImage(const std::string & name, const std::string & file){
+bool OTGRApp::loadImage(const std::string & name, const std::string & file){
 
     SDL_Texture *optimized = NULL;
 
@@ -100,7 +100,7 @@ bool SDLApp::loadImage(const std::string & name, const std::string & file){
     }
 }
 
-SDL_Texture* SDLApp::getResource(const std::string &name){
+SDL_Texture* OTGRApp::getResource(const std::string &name){
     // Grab resource from resources
     return textures[name];
 }

@@ -1,8 +1,8 @@
-#ifndef SDLSPRITE_H
-#define SDLSPRITE_H
+#ifndef OTGRSPRITE_H
+#define OTGRSPRITE_H
 #include <SDL2/SDL.h>
 
-class SDLSprite{
+class OTGRSprite{
 private:
     SDL_Texture * texture;
     unsigned int height, width;
@@ -10,7 +10,7 @@ private:
 
 public:
     /**
-     * @brief SDLSprite Constructor
+     * @brief OTGRSprite Constructor
      * @param t Loaded texture pointer
      * @param w Width in pixels
      * @param h Height in pixels
@@ -18,12 +18,12 @@ public:
      * @param y_coordinates Y coordinate in pixels
      * @param rotation Rotation in degrees
      */
-    SDLSprite(SDL_Texture *t, int w, int h, int x_coordinate = 0, int y_coordinate = 0, int rotation = 0);
-    ~SDLSprite();
+    OTGRSprite(SDL_Texture *t, int w, int h, int x_coordinate = 0, int y_coordinate = 0, int rotation = 0);
+    ~OTGRSprite();
 
     /**
      * @brief getTexture
-     * @return Pointer to texure of SDLSprite
+     * @return Pointer to texure of OTGRSprite
      */
     SDL_Texture * getTexture() const { return texture; }
 
@@ -43,4 +43,4 @@ public:
 
 };
 
-#endif // SDLSPRITE_H
+#endif // OTGRSprite_H

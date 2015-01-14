@@ -20,7 +20,7 @@
 
 //=========================== 1 - Introduction ===========================//
 
-    OTGR SDLEngine is a C++ Object Oriented SDL/OpenGL based engine built
+    OTGR OTGREngine is a C++ Object Oriented SDL/OpenGL based engine built
     with the purpose of being a modern combination of C++. OpenGL, and SDL
     in a way that is useful, intuitive, and allows for ease of
     implimentation.
@@ -42,12 +42,12 @@
 
     URLs for Git Repositories:
 
-        HTTPS - https://github.com/nelsonw2014/OTGR-SDLEngine.git
-        SSH   - git@github.com:nelsonw2014/OTGR-SDLEngine.git
+        HTTPS - https://github.com/nelsonw2014/OTGR-OTGREngine.git
+        SSH   - git@github.com:nelsonw2014/OTGR-OTGREngine.git
 
     With git installed, in your command line, enter:
 
-        git clone <URL> SDLEngine
+        git clone <URL> OTGREngine
 
     Once you provide proper identification, the current commit will be
     downloaded and available.
