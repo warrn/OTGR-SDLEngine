@@ -1,0 +1,82 @@
+############################################################################
+#   _____ _____ _____ _____    _____ ____  __    _____         _           #
+#  |     |_   _|   __| __  |  |   __|    \|  |  |   __|___ ___|_|___ ___   #
+#  |  |  | | | |  |  |    -|  |__   |  |  |  |__|   __|   | . | |   | -_|  #
+#  |_____| |_| |_____|__|__|  |_____|____/|_____|_____|_|_|_  |_|_|_|___|  #
+#                                                         |___|            #
+#                                                                          #
+############################################################################
+
+//========================== Table of Contents ===========================//
+
+    1 - Introduction
+    2 - Getting Started
+        2.1 - Downloading
+        2.2 - Installing
+    3 - Usage
+    4 - Features
+    5 - Planned Features / Future Goals
+
+
+//=========================== 1 - Introduction ===========================//
+
+    OTGR SDLEngine is a C++ Object Oriented SDL/OpenGL based engine built
+    with the purpose of being a modern combination of C++. OpenGL, and SDL
+    in a way that is useful, intuitive, and allows for ease of
+    implimentation.
+
+    This is designed initially as an exploration of the libraries, but will
+    hopefully expand into a tool for which others can use as the basis for
+    games and 3D-intensive applications.
+
+//========================= 2 - Getting Started ==========================//
+
+    In order to compile the libraries, SDL2 and SDL_Image need to both be
+    available to your compiler. Right now, there is no Makefile packaged
+    with the repository, but this'll change in the future.
+
+//========================== 2.1 - Downloading ===========================//
+
+    As of right now, the repository is private, which means you will need
+    to be given the ability by a moderator to clone.
+
+    URLs for Git Repositories:
+
+        HTTPS - https://github.com/nelsonw2014/OTGR-SDLEngine.git
+        SSH   - git@github.com:nelsonw2014/OTGR-SDLEngine.git
+
+    With git installed, in your command line, enter:
+
+        git clone <URL> SDLEngine
+
+    Once you provide proper identification, the current commit will be
+    downloaded and available.
+
+//========================== 2.2 - Installing ============================//
+
+    In order to compile, you must have a GNU C++ compiler, SDL2, and
+    SDL_Image installed.
+
+    CD to the directory where you cloned the repository, and enter
+
+    Windows:
+        g++ -lSDL2 -lSDL2_image *.cpp -o main.exe
+
+    Linux/UNIX-Based:
+        g++ -lSDL2 -lSDL2_image *.cpp -o main
+
+    'main' is the resulting application
+
+//============================== 3 - Usage ===============================//
+
+    Currently very limited. This'll be rewritten.
+
+
+//============================ 4 - Features ==============================//
+
+    It compiles. This'll be rewritten.
+
+//================= 5 - Planned Features / Future Goals ==================//
+
+    A lot more than it has now. This'll also be rewritten, probably in the
+    wiki once I make that.
